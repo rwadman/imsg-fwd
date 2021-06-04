@@ -1,0 +1,26 @@
+{
+  "name": "imsg-fwd",
+  "version": "1.0.0",
+  "description": "a simple imessage forwarder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "imsg-fwd": "./index.js"
+  },
+  "keywords": [
+    "imessage",
+    "forwarder"
+  ],
+  "author": "Rikard Wadman",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "console-stamp": "^3.0.2",
+    "dotenv": "^10.0.0",
+    "figlet": "^1.5.0",
+    "osa-imessage": "^2.4.2",
+    "yargs": "^17.0.1"
+  }
+}
