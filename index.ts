@@ -2,7 +2,7 @@
 require('dotenv').config()
 const yargs = require('yargs')
 const figlet = require('figlet')
-const forwarder = require('./lib/forwarder')
+import { start, Message } from './lib/forwarder'
 
 
 const argv = yargs
@@ -16,4 +16,5 @@ const argv = yargs
 
 console.log(figlet.textSync('iMsg fwd', {font:'rectangles'}))
 console.log(`Forwarding to ${argv.url}`)
-forwarder.start(argv.url, (msg) => msg.text.includes('Mideye OTP:'))
+
+start(argv.url, (msg: Message) => msg.text.includes('Mideye OTP:'))

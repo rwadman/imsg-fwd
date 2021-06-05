@@ -2,12 +2,12 @@
   "name": "imsg-fwd",
   "version": "1.0.0",
   "description": "a simple imessage forwarder",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "imsg-fwd": "./index.js"
+    "imsg-fwd": "./build/index.js"
   },
   "keywords": [
     "imessage",
@@ -22,5 +22,9 @@
     "figlet": "^1.5.0",
     "osa-imessage": "^2.4.2",
     "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.1",
+    "typescript": "^4.3.2"
   }
 }
